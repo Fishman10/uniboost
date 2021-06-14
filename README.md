@@ -1,3 +1,9 @@
+## Training project: TypeScript, Next JS, Reselect, Сlassnames, CSS Module.
+
+Implemented Lists page (with subcatalog) of multi-page site
+
+![Image alt](https://github.com/irmir/uniboost/raw/master/screenshot.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

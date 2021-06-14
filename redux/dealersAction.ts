@@ -1,4 +1,4 @@
-import {dealersAPI} from "../api/dealersAPI"
+import { dealersAPI } from "../api/dealersAPI"
 import { Dispatch } from "redux";
 import { ListsAction, ListsActionTypes } from '../types/lists';
 import { dealers } from "../add/lists";
@@ -11,5 +11,6 @@ export const getDealers = (list: Dealer[]): ListsAction => ({
 
 export const getDealersList = () => async (dispatch: Dispatch<ListsAction>) => {
   const data = await dealersAPI.getDealers('token')
+  //temporary solutions
   dispatch(getDealers(dealers));
 };

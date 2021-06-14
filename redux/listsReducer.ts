@@ -12,7 +12,6 @@ export const listsReducer = (state = initialState, action: ListsAction): ListsSt
 
   switch (action.type) {
     case ListsActionTypes.GET_PRODUCTS: {
-      debugger
       return {
         ...state,
         products: action.payload,

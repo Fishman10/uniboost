@@ -9,7 +9,7 @@ export const Footer: React.FC = () => (
     <div className="container">
       <Logo />
       <Menu />
-      <button><img src="./flag.png" /></button>
+      <button><img src="flag.png" /></button>
       <div className={styles.contact}>
         <input placeholder="Email"></input>
         <button></button>

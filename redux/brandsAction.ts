@@ -10,6 +10,7 @@ export const getBrands = (list: Brand[]): ListsAction => ({
 });
 
 export const getBrandsList = () => async (dispatch: Dispatch<ListsAction>) => {
-  const data = await brandsAPI.getBrands('token')
+  const data = await brandsAPI.getBrands('token');
+  //temporary solutions
   dispatch(getBrands(brands));
 };

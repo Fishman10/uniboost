@@ -13,6 +13,6 @@ export const Options: React.FC = () => (
     <button>
       <FontAwesomeIcon icon={faBell} />
     </button>
-    <button><img src="/lists/flag.png" /></button>
+    <button><img src="/flag.png" /></button>
   </div>
 );
