@@ -1,4 +1,4 @@
-## Training project: TypeScript, Next JS, Reselect, Сlassnames, CSS Module.
+## Training project: TypeScript, Next.js, Reselect, Сlassnames, CSS Module.
 
 Implemented Lists page (with subcatalog) of multi-page site with live search.
 
