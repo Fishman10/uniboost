@@ -1,0 +1,104 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.tabs {
+  width: 360px;
+  display: flex;
+  color: #262930;
+  background-color: #262930;
+  border-radius: 6px;
+  margin-right: 73px;
+}
+.tabs ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.tabs li {
+  width: 120px;
+  font-size: 16px;
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #262930;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+}
+
+.tabs li.active {
+  background-color: #4679f5;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+}
+
+.tabs li:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tabs li::after {
+  content: '';
+  display: block;
+  height: 20px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tabs li:last-child::after {
+  width: 0px;
+}
+
+.search input {
+  width: 360px;
+  height: 38px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #262930;
+  color: rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  border: none;
+  margin-right: 15px;
+}
+
+.search button {
+  background-color: #4679f5;
+  color: white;
+  border-radius: 6px;
+  width: 100px;
+  height: 38px;
+  border: 0;
+  font-size: 16px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.options button {
+  height: 38px;
+  border: 0;
+  color: #4679f5;
+  border-radius: 6px;
+  background-color: #262930;
+  font-size: 20px;
+}
+
+.options button:first-child {
+  width: 110px;
+  margin-right: 15px;
+}
+
+.options button:last-child {
+  width: 38px;
+}

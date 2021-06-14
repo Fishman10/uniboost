@@ -1,0 +1,41 @@
+.breadcrumbs {
+  position: relative;
+  height: 100px;
+}
+.breadcrumbs ol{
+  display: flex;
+  list-style: none;
+  font-size: 17px;
+  padding: 40px 0;
+  height: 50px;
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+.breadcrumbs ol li:first-child {
+  display: none;
+}
+
+.breadcrumbs li {
+  padding-right: 50px;
+  position: relative;
+}
+.breadcrumbs li:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.breadcrumbs li:last-child {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.breadcrumbs li:last-child::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  transform: rotate( 45deg);
+  position: absolute;
+  top: 7px;
+  left: -29px;
+}
