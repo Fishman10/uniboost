@@ -1,13 +1,11 @@
-import PropTypes from 'prop-types';
 import { Provider } from 'react-redux';
+import { useStore } from '../redux/store';
 
-import App, { AppContext } from 'next/app';
-import { initializeStore, useStore } from '../redux/store';
 import '../styles/globals.css';
 
-const MyApp = ({ Component, initialReduxState, pageProps }) => {
-  const store = useStore(initialReduxState);
-
+const MyApp = ({ Component, pageProps }) => {
+  const store = useStore(null);
+  
   return (
     <Provider store={store}>
       <Component {...pageProps} />
@@ -15,17 +13,4 @@ const MyApp = ({ Component, initialReduxState, pageProps }) => {
   );
 }
 
-MyApp.getInitialProps = async (appContext: AppContext) => {
-  const appProps = await App.getInitialProps(appContext);
-  const reduxStore = initializeStore(null);
-
-  return { ...appProps, initialReduxState: reduxStore.getState() };
-};
-
-MyApp.propTypes = {
-  Component: PropTypes.any,
-  initialReduxState: PropTypes.object,
-  pageProps: PropTypes.shape({}),
-};
-
-export default MyApp
+export default  MyApp
