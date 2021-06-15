@@ -1,10 +1,12 @@
 import { MainLayout } from "../../components/MainLayout";
 import { BrandsListContainer } from "../../components/lists/BrandsListContainer";
 
-export default function Brands() {
+const Brands: React.FC = () => {
   return (
     <MainLayout>
       <BrandsListContainer />
     </MainLayout>
   );
 }
+
+export default Brands

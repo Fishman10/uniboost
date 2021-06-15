@@ -1,9 +1,11 @@
 import { MainLayout } from "../components/MainLayout";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <MainLayout>
       <div className="temporary"></div>
     </MainLayout>
   );
 }
+
+export default Home

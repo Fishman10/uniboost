@@ -4,7 +4,7 @@ import Router from "next/router";
 
 import { MainLayout } from "../components/MainLayout";
 
-export default function Home() {
+const Home: React.FC = () => {
   useEffect(() => {
     const { pathname } = Router;
     if (pathname == "/lists") {
@@ -21,3 +21,5 @@ export default function Home() {
     </MainLayout>
   );
 }
+
+export default Home

@@ -5,7 +5,7 @@ import App, { AppContext } from 'next/app';
 import { initializeStore, useStore } from '../redux/store';
 import '../styles/globals.css';
 
-export default function MyApp({ Component, initialReduxState, pageProps }) {
+const MyApp = ({ Component, initialReduxState, pageProps }) => {
   const store = useStore(initialReduxState);
 
   return (
@@ -27,3 +27,5 @@ MyApp.propTypes = {
   initialReduxState: PropTypes.object,
   pageProps: PropTypes.shape({}),
 };
+
+export default MyApp
