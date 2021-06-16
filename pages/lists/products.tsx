@@ -3,7 +3,7 @@ import { ProductsListContainer } from "../../components/lists/ProductsListContai
 
 export default function Products() {
   return (
-    <MainLayout>
+    <MainLayout title="Товары">
       <ProductsListContainer />
     </MainLayout>
   );

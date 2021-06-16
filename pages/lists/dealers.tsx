@@ -3,7 +3,7 @@ import { DealersListContainer } from "../../components/lists/DealersListContaine
 
 const Dealers: React.FC = () => {
   return (
-    <MainLayout>
+    <MainLayout title="Поставщики">
       <DealersListContainer />
     </MainLayout>
   );

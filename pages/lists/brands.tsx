@@ -3,7 +3,7 @@ import { BrandsListContainer } from "../../components/lists/BrandsListContainer"
 
 const Brands: React.FC = () => {
   return (
-    <MainLayout>
+    <MainLayout title="Бренды">
       <BrandsListContainer />
     </MainLayout>
   );
