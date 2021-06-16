@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useEffect } from "react";
 import Router from "next/router";
 
-import { MainLayout } from "../components/MainLayout";
+import { MainLayout } from "../../components/MainLayout";
 
 const Home: React.FC = () => {
   useEffect(() => {

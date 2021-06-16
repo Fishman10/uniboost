@@ -5,6 +5,7 @@ import thunk from 'redux-thunk';
 
 import { rootReducer } from './rootReducer';
 
+debugger
 let store;
 
 function initStore(initialState) {
